@@ -1,0 +1,23 @@
+{
+  "name": "express-login-authentication",
+  "version": "1.0.0",
+  "description": "Simple example application for login authentication using Express.",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanimudah/express-login-authentication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanimudah/express-login-authentication/issues"
+  },
+  "homepage": "https://github.com/sanimudah/express-login-authentication#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-basic-auth": "^1.2.1"
+  }
+}
