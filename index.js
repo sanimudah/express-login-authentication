@@ -10,7 +10,12 @@ app.use(basicAuth({
 
 app.get('/', (req, res) => {
     console.log("hello")
-    res.send(req.headers["user-agent"] + "<br>" + req.headers["xoxo-user-token"]);
+    var response = ""
+    response += "user-agent: " + req.headers["user-agent"] + "<br>"
+    response += "x-mudah-hd: " + req.headers["x-mudah-hd"] + "<br>"
+    response += "x-user-token: " + req.headers["x-user-token"] + "<br>"
+
+    res.send(response);
 });
 
 app.listen(3000, () => console.log('server started'));
